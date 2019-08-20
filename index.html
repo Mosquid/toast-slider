@@ -6,16 +6,18 @@
   <title>Toast Timer</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<input oninput="window.onSlide(event)" type="range" value=0 max=100>
 <body>
-  <ul id="toast-condition">
-    <li><span>79 sec</span></li>
-    <li><span>119 sec</span></li>
-    <li><span>148 sec</span></li>
-    <li><span>178 sec</span></li>
-    <li><span>208 sec</span></li>
-    <li><span>239 sec</span></li>
-  </ul>
+  <div id="wrapper">
+    <ul id="toast-condition">
+      <li><span>79 sec</span></li>
+      <li><span>119 sec</span></li>
+      <li><span>148 sec</span></li>
+      <li><span>178 sec</span></li>
+      <li><span>208 sec</span></li>
+      <li><span>239 sec</span></li>
+    </ul>
+    <input oninput="window.onSlide(event)" type="range" value=0 max=100>
+  </div>
   <script src='./main.js'></script>
 </body>
 </html>

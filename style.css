@@ -53,3 +53,13 @@ body,html {margin: 0;}
 #toast-condition li:nth-child(6) {
   background-position: 95% 90%;
 }
+#wrapper {
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 300px;
+}
+input {
+  position: fixed;
+  bottom: 30vh;
+  width: 300px;
+}
