@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <title>Toast Timer</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src=“https://www.googletagmanager.com/gtag/js?id=UA-39773647-3“></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-39773647-3');
+  </script>
 </head>
 <body>
   <div id="wrapper">
@@ -17,7 +25,7 @@
       <li><span>239 sec</span></li>
     </ul>
     <div class="slidecontainer">
-    <input oninput="window.onSlide(event)" type="range" value=0 max=100 class="slider">
+      <input oninput="window.onSlide(event)" type="range" value=0 max=100 class="slider">
     </div>
   </div>
   <script src='./main.js'></script>
