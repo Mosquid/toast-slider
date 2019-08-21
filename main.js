@@ -49,8 +49,10 @@ window.startTimer = (time) => {
     time = Math.max(0, time-1)
     window.setBreadTime(time)
 
-    if (!time)
+    if (!time) {
+      document.querySelector('h2').className = 'show'
       window.clearTimer()
+    }
   }, 1000)
 }
 

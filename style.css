@@ -2,7 +2,8 @@ body,html {margin: 0;}
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-
+h2 {color: red; opacity: 0; margin: 0 0 5px;}
+h2.show {opacity: 1;}
 #toast-condition {
   list-style: none;
   position: relative;
