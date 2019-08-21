@@ -63,8 +63,8 @@ body {
 }
 
 .slidecontainer {
-  position: fixed;
-  bottom: 30vh;
+  /*position: fixed;*/
+  /*bottom: 30vh;?*/
   width: 300px;
 }
 /* The slider itself */
