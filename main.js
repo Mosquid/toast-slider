@@ -13,10 +13,10 @@ const states = [
 
 window.onSlide = e => {
   const val = parseInt(e.target.value)
-  const current = Math.floor((breads.length * val) / 100)
+
+  const current = Math.floor(((breads.length-1) * val) / 100)
   time = parseInt(states[current])
   bread = breads[current || 0]
-
   window.clearTimer()
   window.startTimer(time)
 
