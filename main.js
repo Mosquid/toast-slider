@@ -11,6 +11,15 @@ const states = [
   239
 ]
 
+window.onPower = e => {
+  const val = parseInt(e.target.value)
+  const current = Math.floor(((breads.length - 1) * val) / 100)
+  const level = Math.ceil((8 * Math.max(1, val)) / 100)
+  
+  document.querySelector('#power').className = `level-${current}`
+  document.querySelector('#power').setAttribute('data-level', `Power ${level}`)
+}
+
 window.onSlide = e => {
   const val = parseInt(e.target.value)
 
@@ -22,6 +31,7 @@ window.onSlide = e => {
 
   for (let b = 0; b < breads.length; b++) {
     breads[b].classList.remove('show')
+    
     if (b <= current)
       breads[b].classList.add('show')
   }

@@ -65,5 +65,68 @@ body {
 .slidecontainer {
   position: fixed;
   bottom: 30vh;
+  width: 300px;
+}
+/* The slider itself */
+label {display: block; padding: 15px 0;}
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
 
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 25px;
+  transform: translate(-3px, -1px);
+  box-shadow: 2px 3px 3px #666, inset 0 0 5px rgba(0,0,0, .2);
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+#power {
+  position: fixed;
+  margin-top: 25px;
+  background-color: red;
+  width: 16px;
+  top: 5px;
+  left: 20px;
+  z-index: 10;
+  height: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px 5px rgba(255,0,0, .3);
+}
+#power:before {
+  display: inline-block;
+  content: attr(data-level);
+  margin-left: 22px;
+  width: 300px;
+}
+#power.level-2 {
+  box-shadow: 0 0 15px 9px rgba(255,0,0, .3);
+}
+#power.level-3 {
+  box-shadow: 0 0 15px 14px rgba(255,0,0, .4);
+}
+#power.level-4 {
+  box-shadow: 0 0 15px 19px rgba(255,0,0, .5);
+}
+#power.level-5 {
+  box-shadow: 0 0 25px 19px rgba(255,0,0, .6);
 }
