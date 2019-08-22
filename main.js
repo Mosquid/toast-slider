@@ -45,7 +45,9 @@ window.setBreadTime = time => {
 }
 
 window.startTimer = (time) => {
-  timer = setInterval(() => {
+    document.querySelector('h2').className = 'hide'
+
+    timer = setInterval(() => {
     time = Math.max(0, time-1)
     window.setBreadTime(time)
 
