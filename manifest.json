@@ -1,0 +1,19 @@
+{
+  "name": "Perfect toast",
+  "short_name": "PToast",
+  "description": "Prepared perfect toast",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "homepage_url": "https://mosquid.github.io/toast-slider/play/tmp.html",
+  "icons": [{
+    "src": "assets/assets/android-icon-192x192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }, {
+    "src": "assets/toaster-image-min.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}
