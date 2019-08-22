@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Toast Timer</title>
+    <link rel="icon" href="../assets/toaster-image.ico">
+    <link rel="shortcut icon" sizes="256x256" href="../assets/toaster-image.ico"/>
+    <link rel="stylesheet" href="../style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src=“https://www.googletagmanager.com/gtag/js?id=UA-39773647-3“></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-39773647-3');
+    </script>
+</head>
+<body>
+<div id="wrapper">
+    <ul id="toast-condition">
+        <li><span>79 sec</span></li>
+        <li><span>119 sec</span></li>
+        <li><span>148 sec</span></li>
+        <li><span>178 sec</span></li>
+        <li><span>208 sec</span></li>
+        <li><span>239 sec</span></li>
+    </ul>
+    <h2>Ready!</h2>
+    <div id="power" data-level="Power 7"></div>
+    <div class="slidecontainer">
+        <label for="">
+            Time
+            <input oninput="window.onSlide(event)" type="range" value=0 max=100 class="slider">
+        </label>
+        <label>
+            Power
+            <input oninput="window.onPower(event)" type="range" value=80 max=100 class="slider">
+        </label>
+    </div>
+</div>
+<script src='./tmp.js'></script>
+</body>
+</html>
